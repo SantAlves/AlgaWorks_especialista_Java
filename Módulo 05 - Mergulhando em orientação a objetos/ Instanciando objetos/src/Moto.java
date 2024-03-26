@@ -4,5 +4,6 @@ public class Moto {
   String modelo;
   int ano;
   int cilindradas;
+  Pessoa proprietario;
 
 }
