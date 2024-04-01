@@ -5,7 +5,7 @@ public class Aplicacao {
 
         // Auterando os valores dos atributos
 
-
+        System.out.println("\n\n=========== Dados do veículo  ===============");
         minhaMoto.fabricante = "Honda";
         minhaMoto.modelo = "CB 650R";
         minhaMoto.ano = 2020;
