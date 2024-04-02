@@ -7,9 +7,10 @@ public class Autor {
 
   void mostrarDetalhes() {
 
-    String mensagem = "********* DETALHES DO AUTOR *********";
+    String mensagem = "\n********* DETALHES DO AUTOR *********";
+    
     System.out.println(mensagem);
-    System.out.println("Nome do autor: " + nomeAutor);
+    System.out.println("\nNome do autor: " + nomeAutor);
     System.out.println("Idade do autor: " + nomeAutor);
     System.out.println("E-mail do autor: " + emailAutor);
   }

@@ -5,6 +5,8 @@ public class Livro {
   String isbn;
   int anoLancamento;
   Autor autor;
+  boolean temAutor;
+  
 
   void mostrarDetalhes() {
     
@@ -15,9 +17,26 @@ public class Livro {
     System.out.println("Valor: R$ " + valor);
     System.out.println("ISBN: " + isbn);
     System.out.println("Ano de lançamento: " + anoLancamento);
-    autor.mostrarDetalhes();
-    System.out.println("\n\n=====================================\n");
 
+    if(this.temAutor()){
+      autor.mostrarDetalhes();
+    }else{
+      System.out.println("Sem autor");
+    }
+    
+    System.out.println("\n\n=====================================\n");
   }
+
+  public void aplicarDescontoDe(double porcentagem){
+    this.valor -= this.valor * porcentagem;
+
+    System.out.println("Valor com desconto: R$ " + valor);
+  }
+
+  boolean temAutor(){
+    return this.autor != null;
+  }
+
+ 
 
 }
